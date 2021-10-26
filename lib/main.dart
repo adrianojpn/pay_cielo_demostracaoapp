@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pay_cielo_demostracaoapp/paginaSelecoaFuncao.dart';
+import 'package:pay_cielo_demostracaoapp/pagina_selecoa_funcao.dart';
 
 void main() {
   runApp(const MyApp());

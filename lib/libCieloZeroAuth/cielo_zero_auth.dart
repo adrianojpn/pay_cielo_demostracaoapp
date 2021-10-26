@@ -138,8 +138,7 @@ ZeroAuthResult _checkResponse(http.Response response) {
       return ZeroAuthResult(
         zeroAuthErrorResponse: <ZeroAuthErrorResponse>[
           ZeroAuthErrorResponse(
-            code: response.reasonPhrase.toLowerCase().replaceAll(" ", "_") ??
-                "unknown_error",
+            code: response.reasonPhrase ?? "unknown_error", //removi .toLowerCase().replaceAll(" ", "_")
             message: response.reasonPhrase ?? "Unknown Error",
           )
         ],
